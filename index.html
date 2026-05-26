@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Mahasiswa - Tugas Tutorial 3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff, #ffffff);
+      color: #1f2937;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+      overflow: hidden;
+      border: 1px solid #dbeafe;
+    }
+
+    .header {
+      background: #1d4ed8;
+      color: white;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .header p {
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    .content {
+      padding: 32px 28px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 24px;
+      background: #f8fafc;
+      margin-bottom: 22px;
+    }
+
+    .card h2 {
+      color: #1d4ed8;
+      font-size: 22px;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #bfdbfe;
+      padding-bottom: 10px;
+    }
+
+    .info-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .label {
+      width: 130px;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    .value {
+      flex: 1;
+      color: #111827;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #374151;
+      margin-top: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 18px;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 24px;
+      }
+
+      .info-row {
+        flex-direction: column;
+        gap: 2px;
+        font-size: 16px;
+      }
+
+      .label {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="header">
+      <h1>Web Server Mahasiswa</h1>
+      <p>Tugas Tutorial 3 - Dasar Infrastruktur TI</p>
+    </section>
+
+    <section class="content">
+      <div class="card">
+        <h2>Informasi Mahasiswa</h2>
+
+        <div class="info-row">
+          <div class="label">Nama</div>
+          <div class="value">Annajmus Tsaaqir</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">NIM</div>
+          <div class="value">050224845</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Alamat Web</div>
+          <div class="value">www.050224845.com</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Keterangan</h2>
+        <p class="description">
+          Halaman ini dibuat sebagai contoh file <strong>index.html</strong> untuk kebutuhan instalasi dan pengujian web server. Isi utama halaman menampilkan informasi nama dan NIM mahasiswa sesuai arahan pada Tugas Tutorial 3.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy; 2026 - Dasar Infrastruktur TI | STSI 4304
+    </footer>
+  </main>
+</body>
+</html>
